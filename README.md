@@ -14,7 +14,7 @@ This project comes with a **_GUI_** using which users can hide any message withi
 </pre>
 or
 <pre>
-Go to Application >> Download <b>jar</b>.
+Go to application >> Download <b>jar</b>.
 </pre>
 
 Also can clone this repository in the local machine by copying and pasting the anyone of the link given below in git bash
@@ -218,7 +218,9 @@ Even though the goal has been the same, the methods and techniques of cryptanaly
 Classically ciphers that rearranged the letters of plaintext were called transposition ciphers. They can be recognized because ciphertext letter frequencies are the same as plaintext letter frequencies. In a simple columnar transposition cipher, the plain text is written row-wise in a table.The key is an integer that specifies the number of letters in a row in the table. The table is then read column-wise.
 For example , let’s the plain text is “attack at dawn” and the key is 4. The plaintext is then written in the table like the following:
 </p>
-<center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/transposition_cipher.jpg"></img></center>
+<div align="center">
+<img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/transposition_cipher.jpg"></img>
+</div>
 <p align="center">Tabel I. Transposition Cipher</p>
 <p align="justify">
 The ciphertext is obtained by reading down the columns in the order of the numbered columns (which are alphabetically ordered).
