@@ -212,6 +212,7 @@ A particular cryptographic algorithm from any of the above categories must assur
 In addition to mathematical analysis of cryptographic algorithms, cryptanalysis includes the study of side-channel attacks that do not target weaknesses in the cryptographic algorithms themselves, but instead exploit weaknesses in their implementation.<br>
 Even though the goal has been the same, the methods and techniques of cryptanalysis have changed drastically through the history of cryptography, adapting to increasing cryptographic complexity, ranging from the pen-and-paper methods of the past, through machines like the British Bombes and Colossus computers at Bletchley Park in World War II, to the mathematically advanced computerized schemes of the present. Methods for breaking modern cryptosystems often involve solving carefully constructed problems in pure mathematics, the best-known being integer factorization.<br>
 </p>
+
 ## Transposition Cipher
 <p align="justify">
 Classically ciphers that rearranged the letters of plaintext were called transposition ciphers. They can be recognized because ciphertext letter frequencies are the same as plaintext letter frequencies. In a simple columnar transposition cipher, the plain text is written row-wise in a table.The key is an integer that specifies the number of letters in a row in the table. The table is then read column-wise.
