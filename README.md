@@ -413,3 +413,45 @@ Formula Used to convert red, green, and blue values to greysacale is:
 <p align="justify">
 As can seen above there is almost no visible change between plain image histogram and stego image histogram. This means that the steganographic technique used has successfully concealed the hidden data without causing significant changes to the pixel distribution. In terms of steganography, this is generally considered desirable as it means the modifications made to the image are minimal and difficult to detect visually or through histogram analysis alone. 
 </p>
+
+<a name="desc-11"></a>
+## Conclusion
+<p align="justify">
+The steganography is one of the safest forms of data transmissions in this digital world. In our proposed method, image steganography is enhanced more by means of transposition cipher algorithm. The message signal is transmitted with utmost security and can be retrieved without any loss in transmission in this method. Apart from lossless transmission this method easily blinds the hackers securing from data piracy. The advantages of the LSB steganography are clear. It is very simple to implement, and generally quite difficult to detect. Here, we have presented an enhancement of the Image steganography system using LSB approach to provide a means of secure communication.<br>
+In our project a new RGB channel based image steganography is proposed. It provides two levels of security, one in the cryptography level and another in the steganography level. The embedding capacity is good. The indicator channel is determined freshly for each pixel. This complexity in the process of embedding, the attacker cannot retrieve the value of the original text without knowing the length of the message and Method of embedding. In this way, the system was strengthened using LSB approach to provide a means of secure communication. The strength of Steganography lies in the sheer amount of information that changes hands every day. It is very simple using digital technology to conceal any given digital information within other information, so virtually anything could contain a hidden meaning. There is no practical way to check it all. However, none of steganography methods we examined could resist a concerted attack if someone knew that there was a message in a given document. For the greatest level of secrecy, we have used the combination of both steganography and cryptography.
+</p>
+
+<a name="desc-12"></a>
+## Future Scope
+1. A strong stegoystem can be built from the proposed method.
+2. The key size in symmetric key cryptography can be increased currently the max key size limit is 4.
+3. Instead of double level; multilevel encryption can be applied with this technique to make the proposed method more secure.
+
+<a name="desc-13"></a>
+## References
+<p align="justify">
+<a name="p-1"></a>
+[1]. Ako Muhammad Abdulla, Roza Hikmat Hama Aziz; New Approaches to Encrypt and Decrypt Data in Image using Cryptography and Steganography Algorithm International Journal of Computer Applications · June 2016<br>
+<a name="p-2"></a>
+[2]. Aumreesh Kumar Saxena, Sitesh Kumar Sinha, Piyush Kumar Shukla; Design and Development of Image Security Technique by Using Cryptography and Steganography: A Combine Approach, International Journal of Image, Graphics and Signal Processing · April 2018<br>
+<a name="p-3"></a>
+[3]. Hayfaa Abdulzahra Atee, Robiah Ahmad; Combining Cryptography and Steganography for Data Hiding in Images, Conference Paper · April 2014<br>
+<a name="p-4"></a>
+[4]. May Hattim, An efficient image cryptography using hash-LSB steganography with RC4 and
+pixel shuffling encryption algorithms, Conference Paper · March 2017<br>
+<a name="p-5"></a>
+[5]. Zin May Zawa, and Su Wai Phyo, “Security Enhancement System Based on the Integration of Cryptography and Steganography”<br>
+<a name="p-6"></a>
+[6]. HAYFAA ABDULZAHRA, ROBIAH AHMAD1, NORLIZA MOHD NOOR, “Combining Cryptography and Steganography for Data Hiding in Images”<br>
+<a name="p-7"></a>
+[7]. May H. Abood, “An Efficient Image Cryptography using Hash-LSB Steganography with RC4 and Pixel Shuffling Encryption Algorithms”<br>
+<a name="p-8"></a>
+[8]. Zeena N. Al-kateeb, Muna Jaffer AL-Shamdeen, and Farah Saad Al-Mukhtar, “Encryption and Steganography a secret data using circle shapes in colored images”<br>
+<a name="p-9"></a>
+[9] .Shamim Ahmed Laskar ,Kattamanchi Hemachandran “High Capacity data hiding using
+LSB Steganography and Encryption”
+</p>
+
+# License
+
+<b><a href="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/LICENSE.md">Click here</a></b> to see the license.
