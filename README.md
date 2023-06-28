@@ -390,3 +390,26 @@ I have used a LSB Steganography algorithm where I converted a msg word into 8 bi
 <br>
 <b>Note:</b> <I>This algorithm assumes that the image has enough capacity to accommodate the entire message. It's also important to consider the implications of modifying the LSB of the image pixels on the visual quality of the image. Also the key size must be less or equal to 4. Exceeding the key size leads to lossy messages.</I>
 </p>
+
+<a name="desc-10"></a>
+## Histogram Analysis
+<p align="justify">
+Histogram analysis in steganography involves analyzing the frequency distribution of pixel values in an image. It is important for image testing as it helps detect any anomalies or alterations caused by steganographic techniques. By comparing the histograms of the original and modified images, deviations in pixel distribution can be identified, indicating the presence of hidden data. Histogram analysis enables the evaluation of steganographic algorithms, assessing their effectiveness in concealing information without significantly affecting the image's visual appearance.<br>
+Formula Used to convert red, green, and blue values to greysacale is: 
+</p>
+<p align="center"><b>luma = 0.299*red + 0.587*green + 0.114*blue</b></p>
+<p align="justify">
+<b>Histogram of Image Before Hiding The Message (Plain Image): </b> 
+</p>
+<center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/plain_img_histogram.png"></img></center>
+<center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/plain_img_histogram_rgb.png"></img></center>
+<p align="center"><br>Figure X. Histogram of Plain Image (Before hiding the message)</p>
+<p align="justify">
+<b>Histogram of Image After Hiding The Message (Stego Image): </b> 
+</p>
+<center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/stego_img_histogram.png"></img></center>
+<center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/stego_img_histogram_rgb.png"></img></center>
+<p align="center"><br>Figure XI. Histogram of Stego Image (After hiding the message)</p>
+<p align="justify">
+As can seen above there is almost no visible change between plain image histogram and stego image histogram. This means that the steganographic technique used has successfully concealed the hidden data without causing significant changes to the pixel distribution. In terms of steganography, this is generally considered desirable as it means the modifications made to the image are minimal and difficult to detect visually or through histogram analysis alone. 
+</p>
