@@ -454,4 +454,4 @@ LSB Steganography and Encryption”
 
 # License
 
-<b><a href="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/LICENSE.md">Click here</a></b> to see the license.
+<b><a href="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/LICENSE">Click here</a></b> to see the license.
