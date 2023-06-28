@@ -330,3 +330,63 @@ Within these techniques, spatial and transform domain techniques are mostly used
   <center><img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/fig-9.png"></img></center>
   <p align="center"><br>Figure IX. IP Datagram Steganography</p>
 </ul>
+
+<a name="desc-9"></a>
+## Proposed Method
+<b>Columnar Transposition</b><br>
+<p align="justify">
+Our project proposed a new method of embedded secret message into image; it is combined between cryptography and steganography in order to provide higher capacity, robustness, and security.
+First the plain text will be encrypted by transposition cipher method. In this transposition cipher method, the plaintext is written row wise in a matrix of given size, but is read out column wise in a specific order depending on a key. Key is something the sender and the recipient agree on
+beforehand. Key tells the size of the matrix. To encrypt plaintext the transposition cipher writes
+the message in a rectangle, row by row, and reads the message off, column by column, but
+permutes the order of the columns based on the key. Both the length of the rows and the
+subsequent arrangement of the columns are defined by either a keyword or numerical key. In a
+regular columnar transposition cipher, any extra spaces are filled with nulls and in an irregular
+columnar transposition cipher, the spaces are left blank.
+Classically ciphers that rearranged the letters of plaintext were called transposition ciphers. They can be recognized because cipher text letter frequencies are the same as plaintext letter frequencies. In a simple columnar transposition cipher, the plain text is written row-wise in a table. The key is an integer that specifies the number of letters in a row in the table. The table is then read column-wise.
+For example, let’s the plain text is “attack at dawn” and the key is 4. The plaintext is then written in the table like the following:
+</p>
+<div align="center">
+<img src="https://github.com/Soumabha-Banerjee/EnigmaticByte/blob/main/src/Docs/columnar_transposition.jpg"></img>
+</div>
+<p align="center">Tabel II. Transposition Cipher</p>
+<p align="justify">
+The ciphertext is obtained by reading down the columns in the order of the numbered columns (which are alphabetically ordered).
+</p>
+<p align="center">Tk nactwt d aaa</p>
+<p align="justify">
+The above algorithm is called <b>Columnar Transposition.</b>
+Procedure for singe columnar transposition cipher:
+1. Chose a key of a fixed length (Length must be less or equal 4).<br>
+2. Write the plain text row-by-row in rectangular form but with a fixed column which is equal to the chosen key.<br>
+3. Re-arrange the column into alphabetical column using the key as the determinant.<br>
+4. Read the message column-by-column.<br>
+5. The message read becomes the cipher text.<br>
+</p>
+<b>Embedding Algorithm</b><br>
+<p align="justify">
+I have used a LSB Steganography algorithm where I converted a msg word into 8 bits. Now I take 3 pixel at a time and each pixels have 3 channels Red, Green, and Blue. In each channel's last bit is changed with the word bit so 3 pixels and each pixel have 3 channel and their last bit so total 3*3*1 = 9 bits so the words 8 bit is hidden inside this 9 bits and the last 1 bit decides where the message ends. If the last bit is 0 then message continues and if it is 1 then this is the end of the message. <br>
+1. Convert the message word into an 8-bit binary representation.
+2. Load the image file that you want to hide the message in.
+3. Iterate through the pixels of the image, processing three pixels at a time.
+4. For each group of three pixels, iterate through the three color channels (Red, Green, Blue).
+5. Extract the last bit from each channel's color value in the pixel.
+6. Replace the last bit of each channel's color value with the corresponding bit from the message word.
+7. Repeat this process for all three pixels, effectively hiding 9 bits of the message word in the image.
+8. After processing each group of three pixels, check the last bit of the Blue channel's color value in the third pixel.
+9. If the last bit is 0, continue processing the next group of three pixels and append the next 9 bits of the message to the image.
+10. If the last bit is 1, this indicates the end of the message. Stop processing the image and finalize the steganography process.
+11. Save the modified image with the hidden message.
+</p>
+</p>
+<b>Retrieval Algorithm</b><br>
+<p align="justify">
+1. Load the image with the hidden message.
+2. Iterate through the pixels and color channels as before.
+3. Extract the last bit from each color channel's color value.
+4. Concatenate the extracted bits to reconstruct the hidden message.
+5. Continue extracting the message until the last bit indicating the end of the message is encountered.
+6. Display or process the extracted message as needed.
+<br>
+<b>Note:</b> This algorithm assumes that the image has enough capacity to accommodate the entire message. It's also important to consider the implications of modifying the LSB of the image pixels on the visual quality of the image.
+</p>
