@@ -372,9 +372,9 @@ I have used a LSB Steganography algorithm where I converted a msg word into 8 bi
 4. For each group of three pixels, iterate through the three color channels (Red, Green, Blue).<br>
 5. Extract the last bit from each channel's color value in the pixel.<br>
 6. Replace the last bit of each channel's color value with the corresponding bit from the message word.<br>
-7. Repeat this process for all three pixels, effectively hiding 9 bits of the message word in the image.<br>
+7. Repeat this process for all three pixels, effectively hiding 8 bits of the message word in the image.<br>
 8. After processing each group of three pixels, check the last bit of the Blue channel's color value in the third pixel.<br>
-9. If the last bit is 0, continue processing the next group of three pixels and append the next 9 bits of the message to the image.<br>
+9. If the last bit is 0, continue processing the next group of three pixels and append the next 8 bits of the message to the 9 bits of image pixels.<br>
 10. If the last bit is 1, this indicates the end of the message. Stop processing the image and finalize the steganography process.<br>
 11. Save the modified image with the hidden message.<br>
 </p>
@@ -386,7 +386,7 @@ I have used a LSB Steganography algorithm where I converted a msg word into 8 bi
 3. Extract the last bit from each color channel's color value.<br>
 4. Concatenate the extracted bits to reconstruct the hidden message.<br>
 5. Continue extracting the message until the last bit indicating the end of the message is encountered.<br>
-6. Display or process the extracted message as needed.
+6. Display or process the extracted message as needed.<br>
 <br>
 <b>Note:</b> <I>This algorithm assumes that the image has enough capacity to accommodate the entire message. It's also important to consider the implications of modifying the LSB of the image pixels on the visual quality of the image. Also the key size must be less or equal to 4. Exceeding the key size leads to lossy messages.</I>
 </p>
