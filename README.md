@@ -355,8 +355,8 @@ The ciphertext is obtained by reading down the columns in the order of the numbe
 </p>
 <p align="center">Tk nactwt d aaa</p>
 <p align="justify">
-The above algorithm is called <b>Columnar Transposition.</b>
-Procedure for singe columnar transposition cipher:
+The above algorithm is called <b>Columnar Transposition.</b><br>
+Procedure for singe columnar transposition cipher:<br>
 1. Chose a key of a fixed length (Length must be less or equal 4).<br>
 2. Write the plain text row-by-row in rectangular form but with a fixed column which is equal to the chosen key.<br>
 3. Re-arrange the column into alphabetical column using the key as the determinant.<br>
@@ -366,27 +366,27 @@ Procedure for singe columnar transposition cipher:
 <b>Embedding Algorithm</b><br>
 <p align="justify">
 I have used a LSB Steganography algorithm where I converted a msg word into 8 bits. Now I take 3 pixel at a time and each pixels have 3 channels Red, Green, and Blue. In each channel's last bit is changed with the word bit so 3 pixels and each pixel have 3 channel and their last bit so total 3*3*1 = 9 bits so the words 8 bit is hidden inside this 9 bits and the last 1 bit decides where the message ends. If the last bit is 0 then message continues and if it is 1 then this is the end of the message. <br>
-1. Convert the message word into an 8-bit binary representation.
-2. Load the image file that you want to hide the message in.
-3. Iterate through the pixels of the image, processing three pixels at a time.
-4. For each group of three pixels, iterate through the three color channels (Red, Green, Blue).
-5. Extract the last bit from each channel's color value in the pixel.
-6. Replace the last bit of each channel's color value with the corresponding bit from the message word.
-7. Repeat this process for all three pixels, effectively hiding 9 bits of the message word in the image.
-8. After processing each group of three pixels, check the last bit of the Blue channel's color value in the third pixel.
-9. If the last bit is 0, continue processing the next group of three pixels and append the next 9 bits of the message to the image.
-10. If the last bit is 1, this indicates the end of the message. Stop processing the image and finalize the steganography process.
-11. Save the modified image with the hidden message.
+1. Convert the message word into an 8-bit binary representation.<br>
+2. Load the image file that you want to hide the message in.<br>
+3. Iterate through the pixels of the image, processing three pixels at a time.<br>
+4. For each group of three pixels, iterate through the three color channels (Red, Green, Blue).<br>
+5. Extract the last bit from each channel's color value in the pixel.<br>
+6. Replace the last bit of each channel's color value with the corresponding bit from the message word.<br>
+7. Repeat this process for all three pixels, effectively hiding 9 bits of the message word in the image.<br>
+8. After processing each group of three pixels, check the last bit of the Blue channel's color value in the third pixel.<br>
+9. If the last bit is 0, continue processing the next group of three pixels and append the next 9 bits of the message to the image.<br>
+10. If the last bit is 1, this indicates the end of the message. Stop processing the image and finalize the steganography process.<br>
+11. Save the modified image with the hidden message.<br>
 </p>
 </p>
 <b>Retrieval Algorithm</b><br>
 <p align="justify">
-1. Load the image with the hidden message.
-2. Iterate through the pixels and color channels as before.
-3. Extract the last bit from each color channel's color value.
-4. Concatenate the extracted bits to reconstruct the hidden message.
-5. Continue extracting the message until the last bit indicating the end of the message is encountered.
+1. Load the image with the hidden message.<br>
+2. Iterate through the pixels and color channels as before.<br>
+3. Extract the last bit from each color channel's color value.<br>
+4. Concatenate the extracted bits to reconstruct the hidden message.<br>
+5. Continue extracting the message until the last bit indicating the end of the message is encountered.<br>
 6. Display or process the extracted message as needed.
 <br>
-<b>Note:</b> This algorithm assumes that the image has enough capacity to accommodate the entire message. It's also important to consider the implications of modifying the LSB of the image pixels on the visual quality of the image.
+<b>Note:</b> <I>This algorithm assumes that the image has enough capacity to accommodate the entire message. It's also important to consider the implications of modifying the LSB of the image pixels on the visual quality of the image. Also the key size must be less or equal to 4. Exceeding the key size leads to lossy messages.</I>
 </p>
