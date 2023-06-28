@@ -32,7 +32,7 @@ gh repo clone Soumabha-Banerjee/EnigmaticByte
 
 After performing Step 1, run main.java file with the latest Java compiler (Java 8 or above)
 
-# How to use
+# How to Use
 
 <ul>
   <li><b>How to hide a message inside a cover image</b></li>
@@ -100,7 +100,7 @@ It gives us immense pleasure to announce the completion of our project on <b>“
 Digital images are being exchanged over various types of networks. With the huge growth of computer networks and the latest advances in digital technologies, a huge amount of digital data is being exchanged over various types of networks. It is often true that a large part of this information is confidential, private or both, which increase the demand for stronger encryption techniques. Steganography is a preferred technique for protecting the transmitted data. It is used to hide information to perform encryption. Steganography techniques are getting significantly more sophisticated and have been widely used. These techniques are the perfect supplement for encryption that allows a user to hide large amounts of information within an image. It seeks to provide a covert communication channel between two parties. The objective of this project is to provide a secret and secured communication between people. Many different carrier file formats can be used, but digital images are the most popular because of their frequency on the Internet. This project simply hides a text message in an image file. For hiding secret information in images, there exist a large variety of steganographic techniques some are more complex than others and all of them have respective strong and weak points. Different applications have different requirements of the steganography technique used. For example, some applications may require absolute invisibility of the secret information, while others require a larger secret message to be hidden. This project intends to give an overview of cryptography, image steganography, their uses and techniques. In this proposed system Cryptography and Steganography are merged together. The contents of secret message are first kept secret by cryptography using columnar transposition ciphering; whereas in image steganography the encrypted messages as payload are embedded into the cover image using RGB based image steganography technique. The image steganography takes the advantage of human eye limitation. It uses color image as cover media for embedding secret message.The important quality of a steganographic system is to be less distortive while increasing the size of the secret message. In this project a method is proposed to embed the encrypted message into a color cover image.
 </p>
 
-# Table of contents
+# Table of Contents
 
 1. [Introduction](#desc-1)
 2. [Literature Review](#desc-2)
